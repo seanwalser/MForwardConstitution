@@ -1,9 +1,71 @@
-Blah blah blah blah blah
+\documentclass{constitution}
+\usepackage{mathpazo}
+\usepackage{lineno}
+\usepackage{xspace}
+\usepackage{soul}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{graphicx}
 
-HA HA HA HA HA
+%\newcommand{\temp}[1]{{\color{red} #1}}
+\newcommand{\temp}[1]{\ul{\bf #1}\todo{TBD}\xspace}
 
-:) :) :)
+\addtolength{\parskip}{\baselineskip}
 
-:P :P :P :P
+\rhead{\thepage}
+\chead{\qquad\qquad Article \Roman{article}}
+\lhead{UMich Student Constitution (Rev: 1141)}
+\rfoot{}
+\cfoot{}
+\lfoot{}
 
-:( :( :( :(
+\begin{document}
+	\renewcommand{\thepage}{\roman{page}}
+	\title{Constitution of the Student Body of the Ann Arbor Campus of the University of Michigan}
+	\author{\includegraphics[width=5in]{S4PGlogo}}
+	\date{Revision 1141 (9 Feb 2010)}
+	\maketitle
+	\tableofcontents
+	\newpage
+
+	\renewcommand{\thepage}{\arabic{page}}
+	\setcounter{page}{1}
+	\pagestyle{fancy}
+	\headheight 35pt
+%	\thispagestyle{empty}
+	\linenumbers
+	
+	\begin{center}
+		\Large Constitution of the Student Body of the Ann Arbor Campus\\ of the University of Michigan
+	\end{center}
+	
+	\begin{center}
+		\bfseries Preamble
+	\end{center}
+
+	AN EDUCATED CITIZENRY being indispensable to the preservation of our civic rights and liberties; creating, securing, and applying knowledge and wisdom among the people being the chief mission of our university; and active participation in our own education being imperative to the success of these undertakings;
+
+	    we, the students of the University of Michigan's Ann Arbor campus, hereby establish this Constitution
+
+	to promote academic freedom and responsibility, foster fellowship and collaboration among the Students, and guarantee a public forum for Student expression.
+	
+
+	\input{governance}
+
+	\input{legislative}
+	
+	\input{executive}
+	
+	\input{judicial}
+	
+	%\input{elections}
+	
+	\input{amendment}
+	
+	\input{organizations}
+
+	\input{initiatives}
+	
+	\input{studentrights}
+
+\end{document}
